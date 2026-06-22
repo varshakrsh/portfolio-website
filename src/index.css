@@ -1,0 +1,13 @@
+/* global css file for the website, imports fonts and tailwindcss, sets up basic styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+@import 'tailwindcss';
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
