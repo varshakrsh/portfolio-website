@@ -24,7 +24,7 @@ title: 'My Portfolio Website',
 subtitle: 'Built from scratch',
 description: 'Designed and built using React 19, GSAP for animations, Framer Motion for transitions, deployed on Vercel.',
 tools: ['React 19', 'GSAP', 'Vite', 'Vercel'],
-githubUrl: 'https://github.com/YOUR_USERNAME/portfolio',
+githubUrl: 'https://github.com/varshakrsh/portfolio-website',
 },
 ]
 export const bmeProjects = [
