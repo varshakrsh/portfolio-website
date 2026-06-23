@@ -17,5 +17,28 @@ This project started with me having a rough idea of what I wanted the wesbite to
 ## Design Decisions
 - I have always had a liking for dark themes on everything I use: code editors, terminals. My previous portfolio website which I hosted on Google sites also had a dark theme throughout, but the website wasn't as interactive and engaging as this one, which was the key reason I decided to build my portfolio website myself. I went with dark charcoal (#1a1a1a) which is softer and easier on the eyes.
 - My BME projects had multiple prototype images. Putting them side by side distorted the pixels and stacking them vertically cluttered the log page. So, I went with a carousel that displays one image at a time, without cropping them out. The carousel also comes with captions to describe what we are looking at and dot indicators to show how images there are.
-- All project data lives in one file - [projects.js](
+- All project data lives in one file - [projects.js](src/data/Projects.js). Components just read that file and render. So, adding or editing projects involves only changing the code in that file without touching any component code.
+- 2 animation libraries were employed. GSAP was chosen for hero entrance animations because it provides precise control over timing and stagger. Framer Motion was used for scroll triggered animations on cards and sections because it was specifically built for React. Each library is used where it's best suited.
+
+## How to Run Locally
+- Make sure you have the following installed on your system: [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/).
+- Follow these steps on your terminal.
+```bash
+# Clone this repository
+git clone https://github.com/varshakrsh/portfolio-website.git
+
+# Move into the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+- Go through the code and make changes according to what you want to see on your website.
+- Open `http://localhost:5173` in your browser.
+
+## Deployment
+Vercel was used for deploying the website. It can be connected to your GitHub repository. Everytime you make changes to your code and push it to GitHub, Vercel automatically pulls the latest version , runs ``` npm run build ```, and publishes the website within 60 seconds of every push.
 
